@@ -1,0 +1,21 @@
+{
+  "name": "teste_cypress_curso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cypress.config.js",
+  "scripts": {
+    "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
+    "lint:fix": "eslint cypress/**/*.js --fix && eslint cypress.config.js --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hussein <husseinothman660@gmail.com> (https://www.youtube.com/@gringotecnologia/videos) ",
+  "license": "MIT",
+  "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
+    "cypress": "^13.6.4",
+    "cypress-mailosaur": "^2.13.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-cypress": "^2.15.1"
+  }
+}
