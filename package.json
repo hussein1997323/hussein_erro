@@ -4,9 +4,13 @@
   "description": "",
   "main": "cypress.config.js",
   "scripts": {
+    "cy:open": "cypress open",
+     "cy:open:tablet": "cypress open --config viewportWidth=767,viewportHeight=480",
+     "test": "cypress run",
+     "test:tablet": "cypress run --config viewportWidth=767,viewportHeight=480 --spec cypress/e2e/authenticated.cy.js",
     "lint": "eslint cypress/**/*.js && eslint cypress.config.js",
-    "lint:fix": "eslint cypress/**/*.js --fix && eslint cypress.config.js --fix",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:fix": "eslint cypress/**/*.js --fix && eslint cypress.config.js --fix"
+    
   },
   "keywords": [],
   "author": "Hussein <husseinothman660@gmail.com> (https://www.youtube.com/@gringotecnologia/videos) ",
@@ -14,8 +18,9 @@
   "devDependencies": {
     "@faker-js/faker": "^8.0.2",
     "cypress": "^13.6.4",
+    "cypress-iframe": "^1.0.1",
     "cypress-mailosaur": "^2.13.0",
-    "eslint": "^8.56.0",
-    "eslint-plugin-cypress": "^2.15.1"
+    "eslint": "^8.43.0",
+    "eslint-plugin-cypress": "^2.13.3"
   }
 }
